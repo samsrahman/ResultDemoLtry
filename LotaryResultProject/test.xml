@@ -3,7 +3,7 @@
 <suite name="Default suite" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test" verbose="2">
     <classes>
-      <class name="resultDemo.MailSent"/>
+      <class name="resultDemo.MailTest"/>
     </classes>
   </test> <!-- Default test -->
 </suite> <!-- Default suite -->

@@ -33,9 +33,9 @@ import org.testng.annotations.Test;
 
 
 public class MailSent {
-@Test
+
 public void mail() throws InterruptedException, IOException {
-	result();
+	
 
     final String username = "qasamsur@gmail.com";
     final String password = "9932442432Qa@";
@@ -71,7 +71,7 @@ public void mail() throws InterruptedException, IOException {
 
         Multipart multipart = new MimeMultipart();
         
-        String file = "C:\\Users\\justf\\Desktop\\Samsur_Automation\\1.jpg";
+        String file ="C:\\Users\\justf\\Desktop\\Samsur_Automation\\1.jpg";
         String fileName = "Result";
         DataSource source = new FileDataSource(file);
         messageBodyPart.setDataHandler(new DataHandler(source));
@@ -90,7 +90,7 @@ public void mail() throws InterruptedException, IOException {
         e.printStackTrace();
     }
   }
-public static void result() throws InterruptedException, IOException {
+public  void result() throws InterruptedException, IOException {
 	System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\Driver\\chromedriver.exe");
 	WebDriver driver = new ChromeDriver();
 	driver.manage().window().maximize();
