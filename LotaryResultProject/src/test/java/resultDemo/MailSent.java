@@ -49,6 +49,7 @@ public void mail() throws InterruptedException, IOException {
 	  props.put("mail.smtp.host", "smtp.gmail.com");
 	  props.put("mail.smtp.port", "465");
 	  props.put("mail.smtp.EnableSSL.enable","true");
+	props.put("mail.smtp.socketFactory.class","javax.net.ssl.SSLSocketFactory");
 	 
 
     Session session = Session.getInstance(props,
