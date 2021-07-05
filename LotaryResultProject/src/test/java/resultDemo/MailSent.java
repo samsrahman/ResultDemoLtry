@@ -29,11 +29,12 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.annotations.Test;
 
 
 public class MailSent {
-
-public static void main(String[] args) throws InterruptedException, IOException {
+@Test
+public void mail() throws InterruptedException, IOException {
 	result();
 
     final String username = "qasamsur@gmail.com";
