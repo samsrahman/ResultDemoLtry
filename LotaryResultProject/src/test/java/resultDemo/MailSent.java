@@ -65,7 +65,7 @@ public void mail() throws InterruptedException, IOException {
         message.setFrom(new InternetAddress("qasamsur@gmail.com"));
         message.setRecipients(Message.RecipientType.TO,
                 InternetAddress.parse("samsrahman@gmail.com"));
-        message.setSubject("Testing Subject");
+        message.setSubject("Lottery-Result");
         message.setText("PFA");
 
         MimeBodyPart messageBodyPart = new MimeBodyPart();
