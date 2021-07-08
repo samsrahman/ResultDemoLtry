@@ -64,7 +64,7 @@ public void mail() throws InterruptedException, IOException {
         Message message = new MimeMessage(session);
         message.setFrom(new InternetAddress("qasamsur@gmail.com"));
         message.setRecipients(Message.RecipientType.TO,
-                InternetAddress.parse("samsrahman@gmail.com"));
+                InternetAddress.parse("samsrahman@gmail.com,alosk7451@gmail.com"));
         message.setSubject("Lottery-Result");
         message.setText("PFA");
 
